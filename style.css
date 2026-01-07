@@ -1,0 +1,169 @@
+body
+
+    /* Navbar Styles */
+    .navbar 
+       {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5); 
+        display: flex;
+        justify-content: center; 
+        padding:15px 0; 
+        z-index: 1000; 
+       }
+
+     .navbar a 
+       {
+         color: #ea95bc;
+         text-decoration: none;
+         margin: 0 20px;
+         font-size: 16px;
+         font-weight: 500;
+       }
+
+     .navbar a:hover 
+       {
+         color: #ffffff;
+       }
+
+       
+     .content
+      {
+         padding-top: 50px; 
+      } 
+      
+     
+      a:link
+       {
+        text-decoration: none;
+       }
+        
+      a:hover 
+       {
+        text-decoration: underline;
+       }
+
+       .navbar a.active 
+       {
+         text-decoration: none;
+         font-weight: bold;
+       }
+
+      /* Bubble Styles */
+      .bubble-full
+       {
+        background-color:rgba(164, 159, 159, 0.18);
+        padding: 30px;
+        border-radius: 20px;
+        border: 2px solid #ecebede0;
+       }
+
+        .bubble
+       {
+        display: inline-block;
+        background: rgba(133, 120, 120, 0.263);
+        padding: 20px;
+        border-radius: 18px;
+       }
+
+      /* Glassmorphism Styles */
+       .glass 
+       {
+        position: relative; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.2);
+        display: flex;
+        justify-content: left; 
+        padding:8px 0; 
+        z-index: 1000; 
+       }
+
+       /* Text Spacing Styles */
+       .text-spacing
+       {
+         text-align: justify;      
+         letter-spacing: 0.5px;    
+         line-height: 1.5;         
+         font-size: 13px;
+         padding-left: 40px;
+         border-left: 3px solid #ffffff50;
+       } 
+        
+       /* Fade-in Animation Styles */
+        .fade-in
+       {
+         animation: fadeIn 2s ease-in-out;
+       }
+
+        @keyframes fadeIn 
+        {
+          from { opacity: 0; transform: translateY(15px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+      /* Image Styles */
+       .img6
+       {
+        border-radius: 30px;
+        outline: 4px dotted white;
+        outline-offset: 5px;
+       }
+
+      /* Music Player Styles */
+      .music-player
+      {
+        position: relative;      
+        top: 60px;           
+        left: 10px;
+        transform: scale(0.6);
+        z-index: 999;
+      }
+
+      .header-section
+      {
+        position: relative;
+      }
+
+      /* Video Gallery Styles */
+      .video-gallery 
+      {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+    .video-item
+     {
+       background: white;
+       border-radius: 20px;
+       padding: 10px;
+       width: fit-content;    
+       margin: auto;   
+     }
+
+    .video-item video 
+     {
+       width: 220px;     
+       height: auto;
+       display: block;
+     }
+
+    .video-item p 
+     {
+       margin: 8px;
+       text-align: center;
+     }
+
+     .video-item:hover 
+     {
+       transform: translateY(-5px);
+     }
+
+  

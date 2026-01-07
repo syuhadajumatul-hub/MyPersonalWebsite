@@ -1,0 +1,209 @@
+<html>
+     <head>
+          <title> My Gallery </title>
+           <link rel="stylesheet" href="style.css">
+         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+     </head>
+
+     <style>
+         body 
+       {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('night flower.jpeg') no-repeat center fixed;
+        background-size: cover;
+        font-family: 'Quicksand', sans-serif; 
+       }
+       
+       .page 
+       {
+         max-width: 1200px;
+         margin: auto;
+         padding: 50px 60px;
+       }
+
+       h1 
+       {
+         font-size: 32px;
+         margin-bottom: 8px;
+       }
+
+       .subtitle
+       {
+         color: #777;
+         margin-bottom: 40px;
+         font-size: 15px;
+       }
+
+       /* ===== Masonry Layout ===== */
+       .masonry
+      {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+      }
+
+    /* ===== Gallery Item ===== */
+    .item 
+    {
+      display: inline-block;  
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      width: 250px;
+      padding: 10px;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .item img 
+    {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .item:hover img 
+    {
+      transform: scale(1.05);
+    }
+
+    .caption 
+    {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) 
+    {
+      .page {
+        padding: 40px 30px;
+      }
+      .masonry {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 500px) 
+    {
+      .masonry {
+        column-count: 1;
+      }
+    }
+       </style>
+
+    <!--Navigation Bar-->
+     <body>
+  <div class="navbar">
+    <a href="homepage link.html">Home</a>
+    <a href="My Biodata.html">About me</a>
+    <a href="Soul Sister.html">Soul Sister</a>
+    <a href="My Music.html">Music</a>
+    <a href="My Cat Oyen.html">Pets</a>
+    <a href="Passion.html">Passion</a>
+    <a href="Gallery.html" class="active"><font color="white">Gallery</font></a>
+  </div>
+
+   <audio autoplay loop controls class="music-player">
+        <source src="audio/Gold Medal Ribbon - Pierce the Veil (Instrumental) - PTV V&I.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+       </audio> 
+
+      <div class="page" align="center">
+        <h1><font color="white"> My Memory Gallery</font></h1>
+        <p class="subtitle"><font color="AAE0F2">Moments with family, friends, and myself</font></p>
+
+      <div class="masonry">
+
+      <div class="item">
+        <img src="images html/me gal.jpg" >
+        <p class="caption">my OOTD</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/me gal2.JPG">
+        <p class="caption">all because</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/me gal3.jpg">
+        <p class="caption">I really loves</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/me gal4.jpg">
+        <p class="caption">black outfits</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/fren gal.jpeg">
+        <p class="caption">my other half</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/fren gal4.jpeg">
+        <p class="caption">which have been together</p>
+      </div>
+
+       <div class="item">
+        <img src="images html/fren gal3.jpg">
+        <p class="caption">on my upside down</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/fren gal2.jpg">
+        <p class="caption"> still always by my side</p>
+      </div>
+
+       <div class="item">
+        <img src="images html/fam gal2.jpeg">
+        <p class="caption">Every memory</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/fam gal.jpeg">
+        <p class="caption">is warmer</p>
+      </div>
+
+       <div class="item">
+        <img src="images html/fam gal3.JPG">
+        <p class="caption">when it’s made</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/fam gal4.jpeg">
+        <p class="caption">with family</p>
+      </div>
+
+        <div class="item">
+        <img src="images html/food gal1.JPG">
+        <p class="caption">wherever we go</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/food gal2.jpeg">
+        <p class="caption">it’s only</p>
+      </div>
+
+      <div class="item">
+        <img src="images html/food gal3.jpeg">
+        <p class="caption">the food that matters</p>
+      </div>
+
+        <div class="item">
+        <img src="images html/food gal4.jpeg">
+        <p class="caption">to be shared</p>
+      </div>
+
+    </div>
+  </div>
+
+         <div class="glass" style="display: flex; align-items: center; float:left">
+          <h4 style= "color:white; margin-left:30px;">© 2026 | Personal Webpage by Nur Jumatul Syuhada </h4>
+         </div>
+     </body>
+
+</html>

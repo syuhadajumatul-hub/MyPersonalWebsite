@@ -10,29 +10,42 @@
        {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: url('night flower.jpeg') no-repeat center fixed;
+        background: url('images html/night flower.jpeg') no-repeat center fixed;
         background-size: cover;
         font-family: 'Quicksand', sans-serif;
        }
+
+       table, td, th
+        {
+          border:1px solid black;
+          border-collapse: collapse;
+        }
+        
+      th, td
+        {
+          padding:10px;
+          background-color:rgba(255, 255, 255, 0.952)
+        }
+
+        td 
+        {
+          text-align:center;
+          background-color:rgba(231, 226, 235, 0.459)
+        }
 
     </style>
 
        <!--Navigation Bar-->
      <body  link="blue" vlink="white" alink="white">
        <div class="navbar">
-    <a href="homepage link.html">Home</a>
-    <a href="My Biodata.html">About me</a>
-    <a href="Soul Sister.html">Soul Sister</a>
-    <a href="My Music.html" class="active"><font color="white">Music</font></a>
-    <a href="My Cat Oyen.html">Pets</a>
-    <a href="Passion.html">Passion</a>
-    <a href="Gallery.html">Gallery</a>
+         <a href="homepage link.html">Home</a>
+         <a href="My Biodata.html">About me</a>
+         <a href="Soul Sister.html">Soul Sister</a>
+         <a href="My Music.html" class="active"><font color="white">Music</font></a>
+         <a href="My Cat Oyen.html">Pets</a>
+         <a href="Passion.html">Passion</a>
+         <a href="Gallery.html">Gallery</a>
      </div>
-
-       <audio autoplay loop controls control class="music-player">
-        <source src="audio/Gold Medal Ribbon - Pierce the Veil (Instrumental) - PTV V&I.mp3" type="audio/mpeg">
-         Your browser does not support the audio element.
-       </audio> 
 
        <section class="header-section">
         <div class="content" align="center">
@@ -64,57 +77,59 @@
           </div>
            <hr color="white">
 
-          <!--Music Spotify Album-->
+
+           <br><br>
+
+          <!--Music Spotify Album Table-->
            <div align="center">
-            <h2><font color="yellow">Click to view Pierce The Veil album!!</font></h2>
+            <h2><font color="yellow">Click the link to view Pierce The Veil album!!</font></h2>
            </div>
            <br>
 
-        <blockquote style="margin-left: 50px; margin-right: 50px;">
-     <div style="display: flex; align-items: center; gap: 60px;">
+           <table style="width: 80%;" align="center">
+                <th>Album</th>
+                <th>Link</th>
+                <th>Best Song from Album</th>
 
-            <!-- First album -->
-            <div style="display: flex; align-items: center;">
-              <img src="images html/Collide with the sky album cover.jpeg" alt="photo" style="width:150px; border-radius:15px; margin-right:20px;"><p style="font-size:20px;">
-              <a href="https://open.spotify.com/album/661Hz0qJK8WIp7vAWsqKvk?si=hO6J3Db2TWKfD7wZo_X4eg"><b>Collide With The Sky</b></a>
-             </p>
-            </div>
+            <!--First Album-->
+             <tr>
+                <td><img src="images html/Pierce The Veil - The Jaws Of Life.jpeg" width="100" style="border-radius:15px;"></td>
+                <td><a href="https://open.spotify.com/album/5Am1LFOFRwS94TaVzrFQwZ?si=Ng5ItFgdToqKK7AoM5JLjQ" target="_blank"><font color="black"><b>The Jaws Of Life</b></font></a></td>
+                <td><audio controls><source src="audio/so far so fake.mp3" type="audio/ogg"></audio></td>
+             </tr>
 
-           <!-- Second album -->
-           <div style="display: flex; align-items: center;">
-             <img src="images html/selfish machines album cover.jpeg" alt="photo" style="width:150px; border-radius:15px; margin-right:20px;"><p style="font-size:20px;">
-             <a href="https://open.spotify.com/album/01dcOm8Whefyve6zChrq9Q?si=j--Y1vWmTbG-IP6S1YoDVQ"><b>Selfish Machines</b></a>
-            </p>
-            </div>
+            </tr>
+            <!--Second Album-->
+            <tr>
+              <td><img src="images html/Collide with the sky album cover.jpeg" width="100" style="border-radius:15px;"></td>
+              <td><a href="https://open.spotify.com/album/661Hz0qJK8WIp7vAWsqKvk?si=hO6J3Db2TWKfD7wZo_X4eg" target="_blank"><font color="black"><b>Collide With The Sky</b></font></a></td>
+              <td><audio controls><source src="audio/hold on till may .mp3" type="audio/ogg"></audio></td>
+            </tr>
 
-             <!-- third album -->
-           <div style="display: flex; align-items: center;">
-             <img src="images html/misadventures album cover.jpeg" alt="photo" style="width:150px; border-radius:15px; margin-right:20px;"><p style="font-size:20px;">
-             <a href="https://open.spotify.com/album/4wIX07SiESzMbSLCK3qCWQ?si=uRMuI-RXSsCWRTPd8z2vNw"><b>Misadventures</b></a>
-            </p>
-            </div>
+             <!--Third  Album-->
+             <tr>
+                <td><img src="images html/selfish machines album cover.jpeg" width="100" style="border-radius:15px;"></td>
+                <td><a href="https://open.spotify.com/album/01dcOm8Whefyve6zChrq9Q?si=j--Y1vWmTbG-IP6S1YoDVQ" target="_blank"><font color="black"><b>Selfish Machines</b></font></a></td>
+                <td><audio controls><source src="audio/Caraphernelia.mp3" type="audio/ogg"></audio></td>
+             </tr>
+              
 
-      </div>
-      </blockquote>
+             <!--Fourth Album-->
+             <tr>
+                <td><img src="images html/misadventures album cover.jpeg" width="100" style="border-radius:15px;"></td>
+                <td><a href="https://open.spotify.com/album/4wIX07SiESzMbSLCK3qCWQ?si=uRMuI-RXSsCWRTPd8z2vNw" target="_blank"><font color="black"><b>Misadventures</b></font></a></td>
+                <td><audio controls><source src="audio/bedless.mp3" type="audio/ogg"></audio></td>
+             </tr>
 
-      <blockquote style="margin-left: 250px; margin-right: 50px;">
-      <div style="display: flex; align-items: center; gap: 60px;">
-      <!-- fourth album -->
-           <div style="display: flex; align-items: center;">
-             <img src="images html/Pierce The Veil - A Flair For The Dramatic (2007).jpeg" alt="photo" style="width:150px; border-radius:15px; margin-right:30px;"><p style="font-size:20px;">
-             <a href="https://open.spotify.com/album/6LkthUHeWKSJsXhjs7SXFq?si=5Z5JwqliRSCB_0bEu6ejUA"><b>A Flair For The Dramatic</b></a>
-            </p>
-            </div>
-
-             <!-- fifth album -->
-           <div style="display: flex; align-items: center;">
-             <img src="images html/Pierce The Veil - The Jaws Of Life.jpeg" alt="photo" style="width:150px; border-radius:15px; margin-right:20px;"><p style="font-size:20px;">
-             <a href="https://open.spotify.com/album/5Am1LFOFRwS94TaVzrFQwZ?si=Ng5ItFgdToqKK7AoM5JLjQ"><b>The Jaws Of Life</b></a>
-            </p>
-            </div>
-
-           </div>
-           </blockquote>
+             <!--Fifth Album-->
+             <tr>
+                <td><img src="images html/Pierce The Veil - A Flair For The Dramatic (2007).jpeg" width="100" style="border-radius:15px;"></td>
+                <td><a href="https://open.spotify.com/album/6LkthUHeWKSJsXhjs7SXFq?si=5Z5JwqliRSCB_0bEu6ejUA" target="_blank"><font color="black"><b>A Flair For The Dramatic</b></font></a></td>
+                <td><audio controls><source src="audio/yeah boy and doll face.mp3" type="audio/ogg"></audio></td>
+             </tr>
+            </table>
+         
+          <br><br>
 
            <hr size="3" color="white">
            <!-- Image Map Generated by http://www.image-map.net/ -->
@@ -137,7 +152,7 @@
            </div>
 
          <div class="glass" style="display: flex; align-items: center; float:left">
-          <h4 style= "color:white; margin-left:30px;">© 2026 | Personal Webpage by Nur Jumatul Syuhada </h4>
+          <h4 style= "color:white; margin-left:30px;">© 2026 | Jumatul Syuhada. All Rights Reserved. </h4>
          </div>
 
 
